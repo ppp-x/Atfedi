@@ -11,3 +11,5 @@ php /path/to/atomreader.php > /path/to/output.php;php /path/to/followerscount.ph
 ```
 
 That's it.
+
+You can see it in action on [my cat's profile](https://guadakitty.puckbarton.nl)!
