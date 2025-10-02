@@ -1,0 +1,1 @@
+This is where the output is generated which will be included by your index.php
