@@ -6,8 +6,7 @@ $isMobile = (bool)preg_match('#\b(ip(hone|od)|android\b.+\bmobile|opera m(ob|in)
 ?>
 <head>
 <link rel="manifest" href="./manifest.json">
-<title>The amazing title to this page</title><?php
-?><title>Follow @theheartofthetardis.politicalmemes.org on Bluesky and @theheartofthetardis@pixelfed.social on the Fediverse - So much bigger on the inside</title>
+<title>The amazing title to this page</title>
 <?php
 if (strpos($isMobile,'1') !== false) { 
 ?><meta name="viewport" content="width=device-width, initial-scale=1.0" /><?php
@@ -94,7 +93,7 @@ h1 {
 </head>
 <body style="margin:0;" bgcolor="white" text="black" alink="black" vlink="blue" link="blue">
 <font face="arial">
-<img src="thott_banner.jpg" width="100%" height="120"><br>
+<img src="banner.jpg" width="100%" height="120"><br>
 <p align="center">
 <table align="center" border="0" valign="top"<?php
 if (strpos($isMobile,'1') !== false) {  } else {
@@ -105,7 +104,7 @@ if (strpos($isMobile,'1') !== false) {  } else {
 if (strpos($isMobile,'1') !== false) {
  include('../mob_followerscount.txt'); 
 } else {
-?><td valign="top" rowspan="17"><img src="thott_profile.png" height="128">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+?><td valign="top" rowspan="17"><img src="profile.png" height="128">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 <h1>The amazing title to this page</h1><br>
 <?php include('../followerscount.txt'); ?>
 <br><br><font size="2">
@@ -119,7 +118,7 @@ if (strpos($isMobile,'1') !== false) { } else {
     
 
 <b><font size="4"><font color="white">Newest posts</b></font></font></td></tr><tr><td valign="top">
-    <?php require('../newposts/output.php'); ?>
+    <?php require('output.php'); ?>
 <br><br></td></tr><tr><td bgcolor="blue" colspan="3" align="center" id="highlights">
 
 <br><br></td></tr>
@@ -129,3 +128,4 @@ if (strpos($isMobile,'1') !== false) { } else {
 <hr width="100%" color="red"><p align="center">
 This website doesn't have a cookie wall because it doesn't use tracking cookies. How about that!</body></html>
 <?php die(); ?>
+
