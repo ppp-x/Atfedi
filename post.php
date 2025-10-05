@@ -52,31 +52,6 @@ if (isset($json['media_attachments']) && is_array($json['media_attachments'])) {
     }
 }
 
-/*        if(strpos($content, "#climate") !== false) {
-            $caption=$caption." <font size=\"2\" face=\"courier\"><a class=\"hashtag\" href=\"/climate/\" style=\"text-decoration:none\">#climate</a></font>";
-        }
-        if(strpos($content, "#feminism") !== false) {
-            $caption=$caption." <font size=\"2\" face=\"courier\"><a class=\"hashtag\" href=\"/feminism/\" style=\"text-decoration:none\">#feminism</a></font>";
-        }
-        if(strpos($content, "#anticapitalism") !== false) {
-            $caption=$caption." <font size=\"2\" face=\"courier\"><a class=\"hashtag\" href=\"/anticapitalism/\" style=\"text-decoration:none\">#anticapitalism</a></font>";
-        }
-        if(strpos($content, "#antifascism") !== false) {
-            $caption=$caption." <font size=\"2\" face=\"courier\"><a class=\"hashtag\" href=\"/antifascism/\" style=\"text-decoration:none\">#antifascism</a></font>";
-        }
-        if(strpos($content, "#queer") !== false) {
-            $caption=$caption." <font size=\"2\" face=\"courier\"><a class=\"hashtag\" href=\"/queerissues/\" style=\"text-decoration:none\">#queer</a></font>";
-        }
-        if(strpos($content, "#palestine") !== false) {
-            $hashtagpalestine = "true";
-        }
-        if(strpos($content, "#freepalestine") !== false) {
-            $hashtagpalestine = "true";
-        }
-        if($hashtagpalestine == "true") {
-            $caption=$caption." <font size=\"2\" face=\"courier\"><a class=\"hashtag\" href=\"/palestine/\" style=\"text-decoration:none\">#palestine</a></font>";
-        } */
-
 $quote = array("\"");
 $apostrophe = array("&quot;");
 $alt = str_replace($quote,$apostrophe,$alt);
@@ -258,3 +233,4 @@ btn.addEventListener("click", async () => {
 <hr width="100%" color="red"><p align="center">
 This website doesn't have a cookie wall because it doesn't use tracking cookies. How about that!</body></html>
 <?php die(); ?>
+
